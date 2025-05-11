@@ -1,4 +1,4 @@
-# AMAS - Mobility AI Assistant
+# AMAS - an mobility ai assistant
 
 ## Requirements
 - Python 3.8+
@@ -7,7 +7,7 @@
 ## Installation
 1. Create and activate virtual environment:
    ```bash
-   uv venv --py=python3.8
+   uv venv
    uv source
    ```
 2. Install dependencies:
