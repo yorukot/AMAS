@@ -22,8 +22,8 @@ else:
 
 model = YOLO('./models/yolo11n-seg.pt')
 
-img = cv2.imread(filename)
-img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+image = cv2.imread(filename)
+img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 input_batch = transform(img).to(device)
 
@@ -40,8 +40,6 @@ with torch.no_grad():
 
 depth_map = prediction.cpu().numpy()
 
-# Yolo detecting
-image = cv2.imread(filename)
 results = model(image)
 
 for result in results.boxes:
