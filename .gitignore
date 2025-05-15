@@ -9,3 +9,6 @@ wheels/
 # Virtual environments
 .venv
 .aider*
+
+# My "heavily inspired" sources
+.ideas
