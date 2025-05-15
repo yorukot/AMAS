@@ -20,3 +20,8 @@ Run the application:
 ```bash
 uv run main.py
 ```
+
+## Todo
+- [] train yolo-seg or other segmentation model with cityscrapes dataset
+- [] use cool math to split screen to a reasonable block size, detects walking path
+- [] video
